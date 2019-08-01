@@ -1,0 +1,8 @@
+title: Ranjith
+author: Ranjith
+email: ranjithpmankada@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  This is my personal website.
+
+sass:
+  style: compressed # style is minified or compressed
