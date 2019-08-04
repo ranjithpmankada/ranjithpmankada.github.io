@@ -1,24 +1,23 @@
-<link rel="stylesheet" href="{{site.baseurl}}/header.css">
-<header class="header" id="main-header">
-    <div class="wrapper menu-button-wrapper">
-        <button class="button is-text" id="menu-button" title="Menu button">
-            <div class="button-inner-wrapper">
-                <span class="icon menu-icon"></span>
+<header class="header">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <h1 class="site-title"> {{ site.title }} </h1>
             </div>
-        </button>
+            <div class="column">
+                <button class="button is-text" id="menu-button" title="Menu button">
+                    <div class="button-wrapper">
+                        <span class="icon menu-icon"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="nav">
+            {% for item in site.data.navigation %}
+                {% if page.url != item.link %}
+                    <a href="{{ item.link }}">{{ item.name }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
     </div>
-    <nav id="main-nav" class="is-deactive">
-        {% for item in site.data.navigation %}
-            {% if page.url != item.link %}
-                <a href="{{ item.link }}">{{ item.name }}</a>
-            {% endif %}
-        {% endfor %}
-    </nav>
-</header>
-    <svg width="150px" height="100px" style="display: none">
-        <pattern id="pattern-circles-blue" x="0" y="0" width="15" height="15" patternUnits="userSpaceOnUse">
-          <circle class="blue" cx="3" cy="3" r="1.8" fill="rgba(240,240,22)" />
-        </pattern>
-        <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles-blue)" />
-      </svg>
- 
+</header> 
