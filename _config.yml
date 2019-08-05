@@ -3,6 +3,24 @@ author: Ranjith
 email: ranjithpmankada@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
   This is my personal website.
+keywords: Ranjith, blog, personal website, github, gh-pages
+baseurl: /
+url: https://ranjithpmankada.github.io
+# url: http://127.0.0.1:4000
 
+# author -- index page "about me" section
+author:  # change following line to your infomation.
+  name: Ranjith  # Be used at blog posts' author.
+  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  github_username: ranjithpmankada  # Leave blank if you don't have now
+  linkedin_id: ranjithpmankada # Leave blank if you don't have now
+  email: ranjithpmankada@gmail.com  # Leave blank if you don't have now
+  cv: http://ranjithpmankada.github.io/assets/cv  # An online CV can be printed as PDF, leave blank if you don't have now
+  desc: Introduce myself will be here.  # Describe yourself.
+
+# scss
 sass:
-  style: compressed # style is minified or compressed
+  style: compressed
+
+# Build settings
+encoding: utf-8
