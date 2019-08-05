@@ -1,23 +1,15 @@
-<header class="header">
+<header class="main-header">
     <div class="container">
-        <div class="columns">
-            <div class="column">
-                <h1 class="site-title"> {{ site.title }} </h1>
-            </div>
-            <div class="column">
-                <button class="button is-text" id="menu-button" title="Menu button">
-                    <div class="button-wrapper">
-                        <span class="icon menu-icon"></span>
-                    </div>
-                </button>
-            </div>
-        </div>
-        <nav class="nav">
-            {% for item in site.data.navigation %}
-                {% if page.url != item.link %}
-                    <a href="{{ item.link }}">{{ item.name }}</a>
-                {% endif %}
-            {% endfor %}
-        </nav>
+        <h1 class="site-title"> {{ site.title }} </h1>
+        <button class="button is-text" id="menu-button" title="Menu button">
+            <span class="icon menu-icon"></span>
+        </button>
     </div>
+    <nav class="nav">
+        {% for item in site.data.navigation %}
+            {% if page.url != item.link %}
+                <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
 </header> 
