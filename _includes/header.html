@@ -1,15 +1,15 @@
-<header class="main-header">
-    <div class="container">
+<header class="header">
+    <div class="container is-flex">
         <h1 class="site-title"> {{ site.title }} </h1>
-        <button class="button is-text" id="menu-button" title="Menu button">
+        <button class="button is-text" id="menu-button" role="button" title="Menu button">
             <span class="icon menu-icon"></span>
         </button>
+        <nav class="nav">
+            {% for item in site.data.navigation %}
+                {% if page.url != item.link %}
+                    <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
     </div>
-    <nav class="nav">
-        {% for item in site.data.navigation %}
-            {% if page.url != item.link %}
-                <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
-            {% endif %}
-        {% endfor %}
-    </nav>
-</header> 
+</header>
