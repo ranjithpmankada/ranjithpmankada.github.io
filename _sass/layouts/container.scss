@@ -1,0 +1,11 @@
+.container {
+    margin: 0 auto;
+    &.is-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &.is-fluid {
+        width: 80%;
+    }
+}

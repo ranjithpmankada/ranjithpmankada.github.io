@@ -1,0 +1,25 @@
+.button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:hover,
+    &.is-hovered {
+        border-color: red;
+        color: red;
+    }
+    &:active,
+    &.is-active {
+        border-color: red;
+        color:red ;
+    }
+    &.is-text {
+        border: none;
+    }
+}

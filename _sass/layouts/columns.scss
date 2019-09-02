@@ -1,0 +1,8 @@
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .column {
+        flex-grow: 1;
+    }
+}

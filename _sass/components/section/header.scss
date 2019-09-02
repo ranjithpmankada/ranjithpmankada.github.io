@@ -1,0 +1,60 @@
+// Header Styles
+
+.header {
+    display: block;
+    width: auto;
+}
+
+#menu-button {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    z-index: 9999;
+    background-color: #000;
+    transition: background-color 2s ease;
+    animation: slidefromright 0.5s forwards;
+    &:hover {
+        .menu-icon {
+            &::before {
+                width: 18px;
+                transition-duration: 0.5s;
+            }
+            &::after {
+                width: 27px;
+                transition-duration: 0.5s;
+            }
+        }
+    }
+}
+%menu-icon-lines {
+    background-color: #ffffff;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 27px;
+    margin: 3px 0;
+    transition-duration: 0.5s;
+}
+.menu-icon {
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: flex-end; 
+    width: 27px;
+    &::before {
+        @extend %menu-icon-lines;
+        width: 27px;    
+    }
+    &::after {
+        @extend %menu-icon-lines;
+        width: 18px;
+    }
+}
+
+#menu-button.is-opened-nav .menu-icon::before {
+    transform: rotateZ(135deg) translate(3px, -3px);
+    width: 27px !important;
+}
+#menu-button.is-opened-nav .menu-icon::after {
+    transform: rotateZ(-135deg) translate(3px, 3px);
+    width: 27px !important;
+}
