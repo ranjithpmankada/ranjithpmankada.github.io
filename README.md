@@ -4,4 +4,4 @@ This is my [personal website](https://ranjithpmankada.github.io) where I share a
 
 **License**
 ------------
-This Jekyll project is Copyright &#169; Ranjith. It is free software, and may be redistributed under the terms specified in the [LICENSE] file.
+This Jekyll project is Copyright &#169; Ranjith. It is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/ranjithpmankada) file.
