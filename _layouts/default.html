@@ -8,16 +8,21 @@
 
   <body dir="ltr">
 
-    {%- include header.html -%}
-    
-    <main class="page-content" aria-label="Content">
-      <div class="container is-fluid">
-        {{ content }}
-      </div>
-    </main>
+    <div id="root">
 
-    {%- include footer.html -%}
+      {%- include header.html -%}
+    
+        <main class="page-content" aria-label="Content">
+          <div class="container is-fluid">
+            {{ content }}
+          </div>
+        </main>
+  
+      {%- include footer.html -%}
+
+    </div>
 
   </body>
+
   <script src="/assets/scripts/coming-soon.js"></script>
 </html>
