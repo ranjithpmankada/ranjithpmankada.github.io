@@ -1,6 +1,6 @@
 # Personal website
 
-This is my [personal website](https://ranjithpmankada.github.io) where I share about me, my experiences and show off my works. 
+This is my [personal blog](https://ranjithpmankada.github.io) where I share things. 
 
 
 **License**
